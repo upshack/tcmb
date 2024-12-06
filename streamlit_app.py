@@ -10,7 +10,7 @@ import os
 os.environ["API_KEY"] == st.secrets['API_KEY']
 API_KEY = st.secrets['API_KEY']
 evds = evdsAPI(API_KEY)
-
+print(st.secrets)
 # Veri çekme
 data = evds.get_data(['TP.DK.USD.A.YTL', 'TP.DK.USD.S.YTL'], 
                      startdate="01-05-2024", enddate="30-11-2024")
