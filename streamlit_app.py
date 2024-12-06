@@ -5,7 +5,9 @@ import matplotlib.pyplot as plt
 from evds import evdsAPI
 from datetime import datetime, timedelta
 import plotly.graph_objects as go
+import os 
 
+os.environ["API_KEY"] == st.secrets['API_KEY']
 API_KEY = st.secrets['API_KEY']
 evds = evdsAPI(API_KEY)
 
