@@ -2,3 +2,4 @@ streamlit
 plotly==5.24.1
 matplotlib
 evds
+scipy
